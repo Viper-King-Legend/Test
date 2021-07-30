@@ -20,6 +20,7 @@ function load_img(){
 		});
 		canvas.add(hole_obj);
 	});
+	newimage()
 }
 
 function new_image()
