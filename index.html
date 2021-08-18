@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hit the Goal</title>
-<link rel="stylesheet" href="style.css">
-<script src="fabric.js"></script>
+	<title>The Math Quiz Game!</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-</head>
+<link rel="stylesheet" type="text/css" href="quiz.css">
 
-<body class="body_background" onload="load_img()">
-	<center>
-		<h3 id="hd3">Hit the Goal</h3>
-		<canvas width="1100" height="500" id="myCanvas">  </canvas>
-	</center>
-	<script src="main.js"></script>
+<script src="quiz_login.js"></script>
+</head>
+<body>
+
+<center>
+
+<h1> Quiz Game </h1>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1"> 
+<h3> Player 1 login for the quiz game </h3>
+<label> User Name: </label>
+<input class="form-control" id="player1_name_input" placeholder="Player 1 Name">
+<br> 
+</div>
+
+<br>
+
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+<h3> Player 2 login for the quiz game </h3>
+<label> User Name: </label>
+<input class="form-control" id="player2_name_input" placeholder="Player 2 Name">
+</div>
+
+<br>
+
+<button class="btn btn-primary" style="width: 30%;" onclick="addUser()"> Log In </button>
+
+</center>
+
 </body>
 </html>
